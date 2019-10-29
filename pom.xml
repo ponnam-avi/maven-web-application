@@ -89,7 +89,7 @@
 	</dependencies>
 	
 	<distributionManagement>
-	    <repository>https://github.com/charyveer75/maven-web-application.git
+	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
 	      <url>http://ec2-13-232-242-25.ap-south-1.compute.amazonaws.com:8081/repository/ronyrelease/</url>
@@ -115,7 +115,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>https://github.com/charyveer75/maven-web-application.git
+	</build>
 
 	
 </project>
