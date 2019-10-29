@@ -89,7 +89,7 @@
 	</dependencies>
 	
 	<distributionManagement>
-	    <repository>
+	    <repository>https://github.com/charyveer75/maven-web-application.git
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
 	      <url>http://ec2-13-232-242-25.ap-south-1.compute.amazonaws.com:8081/repository/ronyrelease/</url>
@@ -107,7 +107,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>http://ec2-3-208-18-161.compute-1.amazonaws.com/about
+				<version>2.5.1</version>
 				<inherited>true</inherited>
 				<configuration>
 					<source>1.8</source>
@@ -115,7 +115,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build>https://github.com/charyveer75/maven-web-application.git
 
 	
 </project>
