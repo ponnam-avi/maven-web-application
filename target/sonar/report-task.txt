@@ -1,6 +1,0 @@
-projectKey=com.mt:maven-web-application
-serverUrl=http://ec2-3-87-142-74.compute-1.amazonaws.com
-serverVersion=7.5.0.20543
-dashboardUrl=http://ec2-3-87-142-74.compute-1.amazonaws.com/dashboard?id=com.mt%3Amaven-web-application
-ceTaskId=AW7PreFuWnBKQ-bLJPa_
-ceTaskUrl=http://ec2-3-87-142-74.compute-1.amazonaws.com/api/ce/task?id=AW7PreFuWnBKQ-bLJPa_
