@@ -93,7 +93,14 @@
               <name>b01088ee806c-releases</name>
               <url>http://ec2-54-224-1-47.compute-1.amazonaws.com:8081/artifactory/libs-release-local</url>
             </repository>
-        </distributionManagement>	
+        </distributionManagement>
+	<distributionManagement>
+            <snapshotRepository>
+               <id>snapshots</id>
+               <name>48e574740e4b-snapshots</name>
+               <url>http://ec2-3-89-209-52.compute-1.amazonaws.com:8081/artifactory/libs-snapshot-local</url>
+            </snapshotRepository>
+        </distributionManagement>
 	<build>
 		<finalName>maven-web-application</finalName>
 		<plugins>
