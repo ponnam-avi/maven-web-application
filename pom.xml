@@ -9,11 +9,7 @@
 	
 	<name>Maven Web Application</name>
 	<url>http://idexceltechnologies.com</url>
-	
 	<description>Maven Web Project</description>
-
-	
-￼
 	<organization>
 		<name>Idexcel Technologies</name>
 		<url>http://idexceltechnologies.com/</url>
@@ -73,7 +69,52 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
+			  <!-- provided dependencies -->
+
+                <dependency>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>javax.servlet-api</artifactId>
+                        <version>3.1.0</version>
+                        <scope>provided</scope>
+                </dependency>
+
+        </dependencies>
+        <distributionManagement>
+            <repository>
+              <id>central</id>
+              <name>b01088ee806c-releases</name>
+              <url>http://ec2-54-224-1-47.compute-1.amazonaws.com:8081/artifactory/libs-release-local</url>
+            </repository>
+          <snapshotRepository>
+            <id>snapshots</id>
+            <name>48e574740e4b-snapshots</name>
+            <url>http://ec2-3-89-209-52.compute-1.amazonaws.com:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+       </distributionManagement>
+        <build>
+                <finalName>maven-web-application</finalName>
+                <plugins>
+                        <plugin>
+                                <groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-compiler-plugin</artifactId>
+                                <version>2.5.1</version>
+                                <inherited>true</inherited>
+                                <configuration>
+                                        <source>1.8</source>
+                                        <target>1.8</target>
+                                </configuration>
+                        </plugin>
+                        <plugin>
+                                 <groupId>org.jacoco</groupId>
+                                 <artifactId>jacoco-maven-plugin</artifactId>
+                                 <version>0.8.4</version>
+                           </plugin>
+                </plugins>
+        </build>
+
+
+</project>
+<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
