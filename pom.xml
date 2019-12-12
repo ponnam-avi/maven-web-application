@@ -5,7 +5,7 @@
         <groupId>com.mt</groupId>
         <artifactId>maven-web-application</artifactId>
         <packaging>war</packaging>
-        <version>1.2</version>
+        <version>1.2-SNAPSHOT</version>
 
         <name>Maven Web Application</name>
         <url>http://idexceltechnologies.com</url>
@@ -99,7 +99,7 @@
             <url>http://ec2-3-89-209-52.compute-1.amazonaws.com:8081/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
        </distributionManagement>
-        <build>
+        <build>DeploySet 
                 <finalName>maven-web-application</finalName>
                 <plugins>
                         <plugin>
