@@ -1,75 +1,83 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	
-	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
-	<packaging>war</packaging>
-	<version>1.2</version>
-	
-	<name>Maven Web Application</name>
-	<url>http://idexceltechnologies.com</url>
-	<description>Maven Web Project</description>
-	<organization>
-		<name>Idexcel Technologies</name>
-		<url>http://idexceltechnologies.com/</url>
-	</organization>
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        <modelVersion>4.0.0</modelVersion>
 
-	<properties>
-		<!-- versions -->
-		
-		<spring.version>5.0.2.RELEASE</spring.version>
-		<junit.version>4.12</junit.version>
-		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://ec2-3-208-18-161.compute-1.amazonaws.com</sonar.host.url>
+        <groupId>com.mt</groupId>
+        <artifactId>maven-web-application</artifactId>
+        <packaging>war</packaging>
+        <version>1.2</version>
 
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properti
-￼es>
+        <name>Maven Web Application</name>
+        <url>http://idexceltechnologies.com</url>
 
-	<dependencies>
+        <description>Maven Web Project</description>
 
-		<!-- test dependencies -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-		</dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>3.2.3.RELEASE</version>
-			<scope>     
-99
-        </distributionManagement>test</scope>
-		</dependency>
+        <organization>
+                <name>Idexcel Technologies</name>
+                <url>http://idexceltechnologies.com/</url>
+        </organization>
 
-		
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-core</artifactId>
-			<version>1.9.5</version>
-			<scope>test</scope>
-		</dependency>
+        <properties>
+                <!-- versions -->
 
-		<!-- compile dependencies -->
+                <spring.version>5.0.2.RELEASE</spring.version>
+                <junit.version>4.12</junit.version>
+                <log4j.version>1.2.17</log4j.version>
+                <sonar.host.url>http://ec2-3-208-18-161.compute-1.amazonaws.com</sonar.host.url>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			  <!-- provided dependencies -->
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        </properties>
+
+        <dependencies>
+
+                <!-- test dependencies -->
+                <dependency>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                        <version>${junit.version}</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-test</artifactId>
+                        <version>3.2.3.RELEASE</version>
+                        <scope>test</scope>
+                </dependency>
+
+
+                <dependency>
+                        <groupId>org.mockito</groupId>
+                        <artifactId>mockito-core</artifactId>
+                        <version>1.9.5</version>
+                        <scope>test</scope>
+                </dependency>
+
+                <!-- compile dependencies -->
+
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-core</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-web</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-webmvc</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+                <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-context</artifactId>
+                        <version>${spring.version}</version>
+                </dependency>
+
+                <!-- provided dependencies -->
 
                 <dependency>
                         <groupId>javax.servlet</groupId>
@@ -81,7 +89,7 @@
         </dependencies>
         <distributionManagement>
             <repository>
-              <id>central</id>
+               <id>central</id>
               <name>b01088ee806c-releases</name>
               <url>http://ec2-54-224-1-47.compute-1.amazonaws.com:8081/artifactory/libs-release-local</url>
             </repository>
@@ -114,56 +122,4 @@
 
 
 </project>
-<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<!-- provided dependencies -->
-
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>provided</scope>
-		</dependency>
-
-	</dependencies>
-        <distributionManagement>
-            <repository>
-              <id>central</id>
-              <name>b01088ee806c-releases</name>
-              <url>http://ec2-54-224-1-47.compute-1.amazonaws.com:8081/artifactory/libs-release-local</url>
-            </repository>
-            <snapshotRepository>
-               <id>snapshots</id>
-               <name>48e574740e4b-snapshots</name>
-               <url>http://ec2-3-89-209-52.compute-1.amazonaws.com:8081/artifactory/libs-snapshot-local</url>
-            </snapshotRepository>
-        </distributionManagement>
-	<build>
-		<finalName>maven-web-application</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>
-				<inherited>true</inherited>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-		        <plugin>
-                                 <groupId>org.jacoco</groupId>
-                                 <artifactId>jacoco-maven-plugin</artifactId>
-                                 <version>0.8.4</version>
-                           </plugin>
-		</plugins>
-	</build>
-
-	
-</project>
+ 
