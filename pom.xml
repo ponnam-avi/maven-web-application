@@ -93,8 +93,6 @@
               <name>b01088ee806c-releases</name>
               <url>http://ec2-54-224-1-47.compute-1.amazonaws.com:8081/artifactory/libs-release-local</url>
             </repository>
-        </distributionManagement>
-	<distributionManagement>
             <snapshotRepository>
                <id>snapshots</id>
                <name>48e574740e4b-snapshots</name>
