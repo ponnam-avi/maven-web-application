@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 	
 	<name>Maven Web Application</name>
 	<url>http://idexceltechnologies.com</url>
@@ -13,6 +13,7 @@
 	<description>Maven Web Project</description>
 
 	
+￼
 	<organization>
 		<name>Idexcel Technologies</name>
 		<url>http://idexceltechnologies.com/</url>
@@ -28,7 +29,8 @@
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
+	</properti
+￼es>
 
 	<dependencies>
 
